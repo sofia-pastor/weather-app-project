@@ -3,6 +3,7 @@ body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/671/original/sky.jpg?1727031369");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Roboto", system-ui;
 }
 
 .weather-app {
