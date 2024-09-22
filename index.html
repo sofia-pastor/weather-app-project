@@ -15,21 +15,32 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            class="search-form-input"
+            required
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Lisbon</h1>
-          <p>
-            Sunday 18:08, light intensity drizzle
-            <br />
-            Humidity: 86%, Wind: 4.63km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Lisbon</h1>
+            <p class="weather-app-info">
+              Sunday 18:08, light intensity drizzle
+              <br />
+              Humidity: <strong>86%</strong>, Wind: <strong>4.63km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-emoji">🌥</div>
+            <div class="weather-app-temperature-value">18</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>🌥 18°C</div>
       </main>
       <footer>
         This project was coded by
@@ -47,7 +58,7 @@
           href="https://weather-search-app-project.netlify.app"
           target="_blank"
         >
-          and hosted on Netlify</a
+          hosted on Netlify</a
         >
       </footer>
     </div>
