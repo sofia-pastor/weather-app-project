@@ -21,6 +21,8 @@ function updateWeatherData(response) {
     alt=""
     class="weather-app-emoji"
     />`;
+
+  document.body.className = response.data.condition.icon;
 }
 
 function formatDate(date) {
