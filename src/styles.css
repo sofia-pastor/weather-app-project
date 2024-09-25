@@ -80,22 +80,25 @@ main {
 
 .weather-app-temperature-container {
   display: flex;
+  margin-top: 7px;
 }
 
 .weather-app-emoji {
-  font-size: 44px;
-  margin-top: 20px;
+  width: 88px;
+  height: 88px;
+  margin-top: -7px;
 }
 
 .weather-app-temperature-value {
   font-size: 72px;
   font-weight: bold;
-  margin-left: 10px;
+  line-height: 72px;
+  margin-left: -5px;
 }
 
 .weather-app-unit {
   font-size: 28px;
-  margin-top: 14px;
+  margin-top: 6px;
 }
 
 footer {
