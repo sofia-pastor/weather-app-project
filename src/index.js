@@ -20,7 +20,7 @@ function updateWeatherData(response) {
     src="${response.data.condition.icon_url}"
     alt=""
     class="weather-app-emoji"
-    />;`;
+    />`;
 }
 
 function formatDate(date) {
