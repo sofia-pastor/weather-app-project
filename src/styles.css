@@ -145,8 +145,8 @@ a .dark {
   border-radius: 16px;
 }
 
-.weather-forecast-day-0 {
-  padding: 20px;
+.weather-forecast-day {
+  padding: 16px;
   border-right: 2px solid rgba(97, 170, 199, 0.5);
 }
 
