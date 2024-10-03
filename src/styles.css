@@ -145,18 +145,8 @@ a .dark {
   border-radius: 16px;
 }
 
-.weather-forecast-day-0,
-.weather-forecast-day-1,
-.weather-forecast-day-2,
-.weather-forecast-day-3,
-.weather-forecast-day-4 {
-  padding: 16px;
-}
-
-.weather-forecast-day-0,
-.weather-forecast-day-1,
-.weather-forecast-day-2,
-.weather-forecast-day-3 {
+.weather-forecast-day-0 {
+  padding: 20px;
   border-right: 2px solid rgba(97, 170, 199, 0.5);
 }
 

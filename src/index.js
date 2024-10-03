@@ -67,4 +67,29 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Fri", "Sat", "Sun", "Mon", "Thu"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-day">
+    <div class="weather-forecast-date">${day}</div>
+    <div class="weather-forecast-icon">🌥</div>
+    <div class="weather-forecast-temperatures">
+    <div class="weather-forecast-max-temperature">
+              <strong>15°C</strong>
+              </div>
+              <div class="weather-forecast-min-temperature">9°C</div>
+              </div>
+              </div>`;
+  });
+
+  forecastElement.innerHTML = forecastHtml;
+}
+
 searchCity("Porto");
+displayForecast();
