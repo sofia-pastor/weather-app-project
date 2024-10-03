@@ -100,7 +100,7 @@ main {
 .weather-app-emoji {
   width: 72px;
   height: 72px;
-  margin-top: 33px;
+  margin-top: 40px;
   margin-left: 20px;
 }
 
@@ -109,21 +109,22 @@ main {
   font-weight: bold;
   line-height: 72px;
   margin-left: -5px;
-  margin-top: 30px;
+  margin-top: 36px;
 }
 
 .weather-app-unit {
   font-size: 28px;
-  margin-top: 36px;
+  margin-top: 42px;
 }
 
 .weather-app-info {
   font-size: 16px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.6);
-  margin-top: 110px;
+  margin-top: 120px;
   text-align: center;
-  margin-left: -180px;
+  position: fixed;
+  margin-left: 5px;
 }
 
 .weather-app-info strong {
