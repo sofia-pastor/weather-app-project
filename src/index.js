@@ -23,6 +23,11 @@ function updateWeatherData(response) {
     />`;
 
   document.body.className = response.data.condition.icon;
+  let body = document.querySelector("body");
+  let icon = response.data.condition.icon;
+  if (icon.includes("night")) {
+    body.classList.add("dark");
+  }
 }
 
 function formatDate(date) {
