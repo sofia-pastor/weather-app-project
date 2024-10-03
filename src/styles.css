@@ -1,10 +1,10 @@
 body {
+  font-family: "Roboto", system-ui;
   background: linear-gradient(
     109.6deg,
     rgba(57, 124, 150, 0.7),
     rgb(6, 86, 95) 91.1%
   );
-  font-family: "Roboto", system-ui;
 }
 
 .weather-app {
@@ -25,7 +25,7 @@ header {
 }
 
 .search-form-input {
-  background: rgb(97, 170, 199, 0.5);
+  background: rgb(97, 170, 199, 0.7);
   border: none;
   border-radius: 5px;
   width: 75%;
@@ -150,7 +150,7 @@ footer {
 }
 
 a {
-  color: rgba(31, 50, 90, 0.5);
+  color: rgba(31, 50, 90, 0.9);
 }
 
 .dark {
