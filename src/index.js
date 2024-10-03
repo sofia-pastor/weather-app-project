@@ -28,6 +28,7 @@ function updateWeatherData(response) {
   if (icon.includes("night")) {
     body.classList.add("dark");
   }
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -67,7 +68,15 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "tb3fa10906d8aeb018ofce8736864bb2";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let forecastElement = document.querySelector("#forecast");
 
   let days = ["Fri", "Sat", "Sun", "Mon", "Thu"];
@@ -92,4 +101,3 @@ function displayForecast() {
 }
 
 searchCity("Porto");
-displayForecast();
